@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const style = {
   container: {
-    border: '1px red solid'
+    background: 'rgba(255, 194, 118, 0.6)'
   }
 }
 

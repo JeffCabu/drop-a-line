@@ -7,7 +7,9 @@ const style = {
     textAlign: 'center',
     background: 'white',
     marginTop: 120,
-    marginBottom: 120
+    marginBottom: 120,
+    marginRight: 20,
+    marginLeft: 20
   },
   space: {
     width: '100vw',

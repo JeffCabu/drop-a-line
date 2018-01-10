@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const style = {
   container: {
-    border: 'blue solid 2px',
+    borderBottom: 'black solid 1px',
     display: 'flex'
   },
   img: {

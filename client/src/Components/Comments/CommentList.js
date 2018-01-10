@@ -18,7 +18,9 @@ const CommentsList = ({comments, deleteComment}) => {
       {
         comments && comments.length > 0
           ? comments.map(comment => {
-            return <CommentCard key={comment._id} text={comment.text} deleteComment={deleteComment} />
+            return <p><CommentCard key={comment._id} text={comment.text} deleteComment={deleteComment} />
+              <button type='button' onClick={() => deleteComment(comment)}>Delete</button>
+            </p>
           })
           : <p>No Comments</p>
       }

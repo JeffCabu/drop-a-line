@@ -39,13 +39,15 @@ class LetterContainer extends Component {
   }
 
   deleteComment = (comment) => {
+    console.log('COMMENT PASSED TO FUNCTION', comment)
     $.ajax({
-      url: `/api/posts/${comment._id}`,
+      url: `/api/comments/${comment._id}`,
       method: 'DELETE'
     }).done((response) => {
-      console.log(response)
+      this.loadLetter()
     })
   }
+
   handleOnTextChange = (e) => this.setState({text: e.target.value})
 
   render () {

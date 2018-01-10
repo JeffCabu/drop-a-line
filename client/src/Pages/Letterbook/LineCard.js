@@ -18,9 +18,15 @@ const style = {
     width: '60vw'
   },
   content: {
-    border: '4px green solid',
+    background: 'url(https://image.freepik.com/free-photo/old-paper-with-patterned-vintage-frame-blank-for-your-design_1484-598.jpg)',
+    // border: '4px black solid',
+    borderLeft: '1px solid black',
+    boxShadow: '5px 8px',
     width: 400,
     height: 350
+  },
+  padding: {
+    padding: 20
   }
 }
 const LineCard = ({post, deletePost}) => {
@@ -34,7 +40,7 @@ const LineCard = ({post, deletePost}) => {
           <CardBody title={'post'} trait={post.message} />
         </div>
       </div>
-      <div>
+      <div style={style.padding}>
         <button type='button' onClick={() => deletePost(post)}>Delete</button>
         <Link to={`/post/${post._id}`}>Comment</Link>
       </div>

@@ -3,23 +3,21 @@ import PropTypes from 'prop-types'
 
 const style = {
   container: {
-    border: '3px red solid',
+    border: '2px red solid',
     background: 'silver',
     width: 500
   }
 }
-const CommentCard = ({text, deleteComment}) => {
+const CommentCard = ({text}) => {
   return (
     <div style={style.container}>
       <p>{text}</p>
-      <button type='button' onClick={() => deleteComment(text)}>Delete</button>
     </div>
   )
 }
 
 CommentCard.propTypes = {
-  text: PropTypes.array.isRequired,
-  deleteComment: PropTypes.func.isRequired
+  text: PropTypes.array.isRequired
 }
 
 export default CommentCard

@@ -6,7 +6,11 @@ const style = {
   container: {
     // background: 'url(https://thebainreport.com/wp-content/uploads/2014/03/5-wrinkled-parchment-paper1.jpg)no-repeat center center fixed',
     // backgroundSize: 'cover',
-    width: '100%'
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    flexDirection: 'column'
   }
 }
 const Letterbook = ({posts, deletePost}) => {
